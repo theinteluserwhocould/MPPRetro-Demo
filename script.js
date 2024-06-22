@@ -336,7 +336,7 @@ Rect.prototype.contains = function(x, y) {
 
 	AudioEngineWeb = function() {
 		this.threshold = 1000;
-		this.worker = new Worker("/workerTimer.js");
+		this.worker = new Worker("/MPPRetro-Demo/workerTimer.js");
 		var self = this;
 		this.worker.onmessage = function(event)
 			{
