@@ -19,7 +19,8 @@ body,html {
     overflow: hidden;
     font: 20pt "MS Sans Serif", sans-serif;
     color: #fff;
-    text-shadow: #444 1px 1px
+    text-shadow: #444 1px 1px;
+    -webkit-font-smoothing: none;
 }
 
 body {
@@ -65,9 +66,7 @@ table {
     left: 4px;
     font-size: 12px;
     width: 90%;
-    width: -webkit-calc(100% - 110px);
-    width: -moz-calc(100% - 110px);
-    width: calc(100% - 110px);
+    width: calc(100% - 130px);
 }
 
 #names .name {
@@ -76,8 +75,8 @@ table {
     padding: 3px;
     margin: 2px;
     border-radius: 2px;
-    border-bottom: 1px solid #111;
-    border-right: 1px solid #111;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
     border-left: 1px solid #fff;
     border-top: 1px solid #fff;
     min-width: 50px;
@@ -161,15 +160,15 @@ table {
 input[type=range] {
     -webkit-appearance: none;
     outline: none;
-    width: 210px;
+    width: 100px;
     height: 5px;
     border-radius: 1px;
     position: relative;
-    background-image: -webkit-gradient(linear,left top,right top,color-stop(0,hsla(254,100%,25%,.8)),color-stop(.08,hsla(254,100%,13%,.8)),color-stop(.5,hsl(200,80%,0%)),color-stop(.92,hsl(200,80%,15%)),color-stop(1,hsl(200,80%,45%)));
-    -webkit-background-clip: padding-box;
+    background-image: url("/volume2.png");
     border: 0;
     border-bottom: 2px solid rgba(0,0,0,.1);
-    cursor: ew-resize
+    cursor: ew-resize;
+    right: 0px;
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -196,8 +195,6 @@ input[type=range]::-webkit-slider-thumb:active {
 }
 
 input[type=range]:hover {
-    background-image: -webkit-gradient(linear,left top,right top,color-stop(0,hsla(284,100%,25%,.8)),color-stop(.08,hsla(284,100%,13%,.8)),color-stop(.5,hsl(200,80%,0%)),color-stop(.92,hsl(200,80%,15%)),color-stop(1,hsl(200,80%,45%)));
-    -webkit-box-shadow: inset #000 1px 1px 1px,inset #000 -1px -1px 1px
 }
 
 #piano {
@@ -508,6 +505,10 @@ input[type=range]:hover {
     border-top: 1px solid #fff;
 }
 
+#room .expand:hover {
+    background: #00007b url(/arrow.png) no-repeat center 0; 
+}
+
 #room .expand:active {
     border-bottom: 1px solid #fff;
     border-right: 1px solid #fff;
@@ -760,6 +761,10 @@ background-image: linear-gradient(90deg, rgba(0,0,106,1), rgba(16,132,206,1));
     border: 0
 }
 
+.volume-slider { width: 100%; height: 100%; background: url("/volume2.png") no-repeat; background-position: 50% 50%;
+	-webkit-appearance: none; }
+
+
 #volume-label {
     position: absolute;
     right: 30px;
@@ -857,7 +862,7 @@ background-image: linear-gradient(90deg, rgba(0,0,106,1), rgba(16,132,206,1));
 
 .notification .x {
     position: absolute;
-    right: 5px;
+    right: 3px;
     top: 5px;
     cursor: pointer;
     font-size: 15px;
@@ -1435,7 +1440,7 @@ background-image: linear-gradient(90deg, rgba(0,0,106,1), rgba(16,132,206,1));
 }
 
 #names {
-    z-index: 300
+    z-index: 300;
 }
 
 #names .nametag {
