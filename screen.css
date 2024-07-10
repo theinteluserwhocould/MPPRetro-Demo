@@ -96,7 +96,7 @@ table {
 }
 
 #names .name.owner:before {
-    content: url(/crown.png);
+    content: url(MPPRetro-Demo/crown.png);
     position: absolute;
     top: -8px;
     left: 4px
@@ -164,7 +164,7 @@ input[type=range] {
     height: 5px;
     border-radius: 1px;
     position: relative;
-    background-image: url("/volume2.png");
+    background-image: url("MPPRetro-Demo/volume2.png");
     border: 0;
     border-bottom: 2px solid rgba(0,0,0,.1);
     cursor: ew-resize;
@@ -275,7 +275,7 @@ input[type=range]:hover {
 .cursor {
     width: 18px;
     height: 24px;
-    background: url(/cursor.png);
+    background: url(MPPRetro-Demo/cursor.png);
     position: absolute;
     pointer-events: none;
     margin-left: -2px;
@@ -302,7 +302,7 @@ input[type=range]:hover {
 }
 
 .cursor.owner .name:after {
-    content: url(/crown.png);
+    content: url(MPPRetro-Demo/crown.png);
     position: relative;
     top: -8px;
     left: 0
@@ -386,7 +386,7 @@ input[type=range]:hover {
     position: absolute;
     width: 16px;
     height: 16px;
-    background: url(/crown.png) no-repeat;
+    background: url(MPPRetro-Demo/crown.png) no-repeat;
     cursor: pointer;
     font-size: 10px
 }
@@ -479,14 +479,14 @@ input[type=range]:hover {
 }
 
 #room .info.crownsolo:after {
-    content: url(/crownsolo.png);
+    content: url(MPPRetro-Demo/MPPRetro-Demo/crownsolo.png);
     position: relative;
     top: 2px;
     margin-left: 4px
 }
 
 #room .info.no-chat:after {
-    content: url(/no-chat.png);
+    content: url(MPPRetro-Demo/no-chat.png);
     position: relative;
     top: 2px;
     margin-left: 4px
@@ -498,7 +498,7 @@ input[type=range]:hover {
     position: absolute;
     right: -1px;
     top: -1px;
-    background: #ccc url(/arrow.png) no-repeat center 0;
+    background: #ccc url(MPPRetro-Demo/arrow.png) no-repeat center 0;
     border-bottom: 1px solid #000;
     border-right: 1px solid #000;
     border-left: 1px solid #fff;
@@ -506,7 +506,7 @@ input[type=range]:hover {
 }
 
 #room .expand:hover {
-    background: #00007b url(/arrow.png) no-repeat center 0; 
+    background: #00007b url(MPPRetro-Demo/arrow.png) no-repeat center 0; 
 }
 
 #room .expand:active {
@@ -752,7 +752,7 @@ background-image: linear-gradient(90deg, rgba(0,0,106,1), rgba(16,132,206,1));
 #volume-slider {
     width: 100%;
     height: 100%;
-    background: url(/volume2.png) no-repeat;
+    background: url(MPPRetro-Demo/volume2.png) no-repeat;
     background-position: 50% 50%;
     -webkit-appearance: none;
     -moz-box-shadow: none;
@@ -761,7 +761,7 @@ background-image: linear-gradient(90deg, rgba(0,0,106,1), rgba(16,132,206,1));
     border: 0
 }
 
-.volume-slider { width: 100%; height: 100%; background: url("/volume2.png") no-repeat; background-position: 50% 50%;
+.volume-slider { width: 100%; height: 100%; background: url("MPPRetro-Demo/volume2.png") no-repeat; background-position: 50% 50%;
 	-webkit-appearance: none; }
 
 
@@ -1338,7 +1338,7 @@ background-image: linear-gradient(90deg, rgba(0,0,106,1), rgba(16,132,206,1));
     box-shadow: 1px 1px 8px #bb9;
     color: #788;
     text-shadow: none;
-    background: url(kitten1.png) 0 4px no-repeat;
+    background: url(MPPRetro-Demo/kitten1.png) 0 4px no-repeat;
     background-color: #dee
 }
 
@@ -1419,7 +1419,7 @@ background-image: linear-gradient(90deg, rgba(0,0,106,1), rgba(16,132,206,1));
 }
 
 #email:before {
-    content: url(envelope.png);
+    content: url(MPPRetro-Demo/envelope.png);
     margin: 4px
 }
 
